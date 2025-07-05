@@ -92,6 +92,8 @@ Gestor de Ventas App es una solución avanzada para empresas distribuidoras/inte
 
 ## 📁 Estructura del proyecto
 
+ - Ver mejor en mapa mental.
+
 src/main/java/com/gestorventasapp/
   ├── app/
   ├── controller/
