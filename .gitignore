@@ -1,0 +1,22 @@
+# Eclipse/Java/IDE
+.settings/
+.classpath
+.project
+.factorypath
+
+# Maven
+target/
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.bak
+
+# Archivos personales de IDE
+*.iml
+.idea/
+.vscode/

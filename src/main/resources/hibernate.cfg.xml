@@ -1,0 +1,40 @@
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- Configuración de conexión a la base de datos -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/gestor_ventas_app</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">1234</property>
+
+		<!-- Dialecto de Hibernate para MySQL -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.format_sql">false</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- Pool de conexiones -->
+		<property name="hibernate.hikari.maximumPoolSize">20</property>
+		<property name="hibernate.hikari.minimumIdle">5</property>
+		<property name="hibernate.hikari.idleTimeout">30000</property>
+		<property name="hibernate.hikari.maxLifetime">1800000</property>
+
+		<!-- Mapea todas las entidades actuales -->
+		<mapping class="com.gestorventasapp.model.Producto" />
+		<mapping class="com.gestorventasapp.model.Cliente" />
+		<mapping class="com.gestorventasapp.model.Proveedor" />
+		<mapping class="com.gestorventasapp.model.Empleado" />
+		<mapping class="com.gestorventasapp.model.Usuario" />
+		<mapping class="com.gestorventasapp.model.Venta" />
+		<mapping class="com.gestorventasapp.model.Compra" />
+		<mapping class="com.gestorventasapp.model.DetalleVenta" />
+		<mapping class="com.gestorventasapp.model.DetalleCompra" />
+		<mapping class="com.gestorventasapp.model.Iva" />
+		<mapping class="com.gestorventasapp.model.Auditoria" />
+		
+		
+
+	</session-factory>
+</hibernate-configuration>

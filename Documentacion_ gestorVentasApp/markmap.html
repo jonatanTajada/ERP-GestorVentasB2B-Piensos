@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"GestorVentasB2B-Piensos (Mapa mental de arquitectura)","children":[{"content":"src/main/java/com/gestorventasapp","children":[{"content":"app","children":[{"content":"MainApp.java (entrada y arranque)","children":[],"payload":{"tag":"li","lines":"5,6"}}],"payload":{"tag":"li","lines":"4,6"}},{"content":"controller","children":[{"content":"Controladores de interacci&#xf3;n entre vista y l&#xf3;gica de negocio","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"Ej: ClienteController, VentaController...","children":[],"payload":{"tag":"li","lines":"8,9"}}],"payload":{"tag":"li","lines":"6,9"}},{"content":"dao","children":[{"content":"DAOs para acceso a base de datos (CRUD, consultas seguras)","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Interfaces y sus implementaciones","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Ej: ClienteDAO, VentaDAO, ProductoDAO, etc.","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"li","lines":"9,13"}},{"content":"enums","children":[{"content":"Enumeraciones de dominio","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Ej: Estado, TipoUsuario, TipoAnimal, FormaJuridica...","children":[],"payload":{"tag":"li","lines":"15,16"}}],"payload":{"tag":"li","lines":"13,16"}},{"content":"exceptions","children":[{"content":"Excepciones personalizadas para manejo de errores","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"Ej: DAOException, ServiceException, ControllerException...","children":[],"payload":{"tag":"li","lines":"18,19"}}],"payload":{"tag":"li","lines":"16,19"}},{"content":"model","children":[{"content":"Entidades principales (POJOs/Beans)","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"Ej: Cliente, Proveedor, Producto, Venta, Compra...","children":[],"payload":{"tag":"li","lines":"21,22"}}],"payload":{"tag":"li","lines":"19,22"}},{"content":"service","children":[{"content":"L&#xf3;gica de negocio, reglas, validaciones","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"Interfaces y sus implementaciones (Impl)","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"Ej: ClienteService, VentaService, etc.","children":[],"payload":{"tag":"li","lines":"25,26"}}],"payload":{"tag":"li","lines":"22,26"}},{"content":"util","children":[{"content":"Clases utilitarias, helpers, configuraciones (ej: HibernateUtil, utilidades de UI)","children":[],"payload":{"tag":"li","lines":"27,28"}}],"payload":{"tag":"li","lines":"26,28"}},{"content":"view","children":[{"content":"Vistas Swing (formularios, paneles, pantallas principales)","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"Ej: LoginView, ClienteView, CompraView, ProductoView, etc.","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"li","lines":"28,32"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"Arquitectura global","children":[{"content":"MVC completo: model, view, controller","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"DAO: acceso seguro y desacoplado a BBDD","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"Hibernate ORM: mapeo autom&#xe1;tico entidades&#x2194;SQL","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"Multiusuario/multipantalla","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"Validaciones y excepciones propias","children":[],"payload":{"tag":"li","lines":"37,39"}}],"payload":{"tag":"h2","lines":"32,33"}},{"content":"Funcionalidad B2B","children":[{"content":"Clientes y proveedores (solo empresas/aut&#xf3;nomos)","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"Piensos (perros, gatos, caballos)","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"Ventas, compras, stock, devoluciones","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"Filtros, b&#xfa;squedas, auditor&#xed;a, eliminaci&#xf3;n l&#xf3;gica","children":[],"payload":{"tag":"li","lines":"43,45"}}],"payload":{"tag":"h2","lines":"39,40"}},{"content":"Documentaci&#xf3;n","children":[{"content":"T&#xe9;cnica (PDF)","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"Usabilidad (PDF)","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"SQL (script base de datos)","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"Manual de usuario","children":[],"payload":{"tag":"li","lines":"49,51"}}],"payload":{"tag":"h2","lines":"45,46"}},{"content":"Mejoras futuras","children":[{"content":"Dashboard de KPIs","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"Multi-idioma","children":[],"payload":{"tag":"li","lines":"53,54"}},{"content":"Integraci&#xf3;n con APIs externas","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"M&#xf3;dulos adicionales","children":[],"payload":{"tag":"li","lines":"55,57"}}],"payload":{"tag":"h2","lines":"51,52"}},{"content":"Autor&#xed;a","children":[{"content":"Jonatan Tajada Rico, 2025","children":[],"payload":{"tag":"li","lines":"58,59"}}],"payload":{"tag":"h2","lines":"57,58"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+</body>
+</html>
