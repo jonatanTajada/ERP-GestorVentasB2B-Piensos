@@ -127,8 +127,8 @@ Toda la documentación adicional se encuentra en la carpeta correspondiente.
 
 ## 👤 Autoría y créditos
 
-Jonatan Tajada Rico
-tajadarico@gmail.com
+ - Jonatan Tajada Rico
+ - tajadarico@gmail.com
 
 ## 🏷️ Licencia
 
